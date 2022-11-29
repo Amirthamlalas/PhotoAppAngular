@@ -3,14 +3,17 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3" *ngFor = "let i of data">
 
 
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" >
+                        <img src="{{i.url}}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text"></p>
+                          <p class="card-text">Album id : {{i.albumId}}</p>
+                          <p class="card-text">Id : {{i.id}}</p>
+                          <p class="card-text">Title : {{i.title}}</p>
                         </div>
                       </div>
                 </div>

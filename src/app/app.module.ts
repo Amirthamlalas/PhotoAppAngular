@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ViewPhotoComponent } from './view-photo/view-photo.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
 
 const myroute:Routes=[
   {
@@ -23,7 +24,8 @@ const myroute:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myroute)
+    RouterModule.forRoot(myroute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
